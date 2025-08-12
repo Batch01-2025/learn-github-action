@@ -15,10 +15,10 @@ on:
           description: "True to print to STDOUT"
           required: true
           type: boolean
-          tags:
-            description: "Test Scenarios tags"
-            required: true
-            type: string
+        tags:
+          description: "Test Scenarios tags"
+          required: true
+          type: string
 
 jobs:
   Explore-Github-Actions:
