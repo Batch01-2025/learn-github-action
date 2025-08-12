@@ -19,7 +19,6 @@ on:
           description: "Test Scenarios tags"
           required: true
           type: string
-
 jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
