@@ -1,7 +1,7 @@
 name: example01
 on: [push]
 jobs:
- Explore-Github_Actions:
-   runs-on: ubuntu-latest
-   steps:
-     -run: echo " The Job was automatically triggered by a ${{ github.event_name }} event."
+  Explore-Github_Actions:
+    runs-on: ubuntu-latest
+    steps:
+      -run: echo " The Job was automatically triggered by a ${{ github.event_name }} event."
