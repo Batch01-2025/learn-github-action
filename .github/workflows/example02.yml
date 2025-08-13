@@ -11,14 +11,14 @@ on:
           - info
           - warnings
           - debug
-        print_tags:
-          description: 'True to print to STDOUT'
-          required: true
-          type: boolean
-        tags:
-          description: 'Test Scenarios tags'
-          required: true
-          type: string
+      print_tags:
+        description: 'True to print to STDOUT'
+        required: true
+        type: boolean
+      tags:
+        description: 'Test Scenarios tags'
+        required: true
+        type: string
 jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
