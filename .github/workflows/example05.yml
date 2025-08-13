@@ -1,0 +1,23 @@
+name: Example Workflow 05
+on: [push]
+jobs:
+  # Sequential job
+  Test1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo " This is the First Sequential Job triggered by a ${{ github.event_name }} event."
+  Test2:
+    runs-on: ubuntu-latest
+    needs: Test1
+    steps:
+      - run: echo " This is the Second Sequential Job triggered by a ${{ github.event_name }} event."
+  Test3:
+    runs-on: ubuntu-latest
+    needs: Test2
+    steps:
+      - run: echo " This is the Third Sequential Job triggered by a ${{ github.event_name }} event."
+  Test4:
+    runs-on: ubuntu-latest
+    needs: Test3
+    steps:
+      - run: echo " This is the Forth Sequential Job triggered by a ${{ github.event_name }} event."
