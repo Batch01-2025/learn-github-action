@@ -1,0 +1,10 @@
+name: Example Workflow 03
+on: [push]
+jobs:
+  container-test-jobs:
+    runs-on: ubuntu-latest
+    container:
+      image: docker.io/rkalluru/learnk8s:rhel9-bare
+    steps:
+      - name: Just Say Hello World
+        run: echo "Hello World!"
