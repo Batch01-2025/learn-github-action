@@ -3,20 +3,20 @@ on:
   workflow_dispatch:
     inputs:
       loglevel:
-        description: "Log Level"
+        description: 'Log Level'
         required: true
-        default: "warning"
+        default: 'warning'
         type: choice
         options:
           - info
           - warnings
           - debug
         print_tags:
-          description: "True to print to STDOUT"
+          description: 'True to print to STDOUT'
           required: true
           type: boolean
         tags:
-          description: "Test Scenarios tags"
+          description: 'Test Scenarios tags'
           required: true
           type: string
 jobs:
