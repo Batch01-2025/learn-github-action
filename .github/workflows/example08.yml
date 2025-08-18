@@ -1,0 +1,15 @@
+name: Example Workflow 08
+on: [push]
+jobs:
+  Test1:
+    runs_on: ubuntu-latest
+    steps:
+      - name: Failing Step
+        id: demo
+        run: exit 1
+        if: ${{ failure() }} && steps.demo.conclusion == 'failure' }}
+
+
+#       - name: Run ONly if previous step failed
+#         run: echo "Previous step failed"
+#         if: ${{ failure() }} && steps.demo.conclusion == 'failure' }}
