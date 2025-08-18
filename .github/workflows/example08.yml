@@ -2,7 +2,7 @@ name: Example Workflow 08
 on: [push]
 jobs:
   Test1:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Failing Step
         id: demo
