@@ -1,0 +1,10 @@
+# Fail a Pipeline
+name: Example Workflow 07
+on: [push]
+jobs:
+  #Sequential Job
+  Test1:
+    runs-on: ubuntu-latest
+    steps:
+      - run |
+          echo ${{ job.container.id }}
