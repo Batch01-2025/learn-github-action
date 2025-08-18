@@ -3,8 +3,8 @@ name: Example Workflow 07
 on: [push]
 jobs:
   #Sequential Job
-  job:
+  Test1:
     runs-on: ubuntu-latest
     steps:
-      - run |
+      - run: |
           echo ${{ job.container.id }}
