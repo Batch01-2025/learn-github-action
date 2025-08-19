@@ -1,0 +1,12 @@
+name: Example Workflow 10
+on: [workflow_dispatch]
+jobs:
+  Explore-Github-Actions:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - name: Matrix Strategy
+        run: echo " This job was Automatically triggered by a ${{ github.event_name }} event."
