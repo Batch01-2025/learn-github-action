@@ -13,6 +13,7 @@ jobs:
           path: new.txt
   Stage2:
     runs-on: ubuntu-latest
+    needs: Stage1
     steps:
       - name: Download files
         uses: actions/download-artifact@v4
